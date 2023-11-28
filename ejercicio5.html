@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <section>
+            <p>Lista compras</p>
+            <fieldset>
+                <label for="listaProd">Ingresa Producto</label>
+                <input name="listaProd" list="productos" type="text">
+                <datalist id="productos">
+                    <option value="iphone">
+                    <option value="ipad">
+                    <option value="pencil">
+                </datalist>
+            </fieldset>
+        </section>
+        <section>
+            <p>lista de paginas web</p>
+            <fieldset>
+                <label for="urlList">urls</label>
+                <input type="url" name="urlList" list="urls">
+                <datalist id="urls">
+                    <option value="www.google.com">
+                    <option value="www.facebook.com">
+                </datalist>
+            </fieldset>
+        </section>
+        <section>
+            <p>Barra Rangos</p>
+            <fieldset>
+                <label for="rango">Rango</label>
+                <input type="range" min="0" max="100" step="1" list="points">
+                <datalist id="points">
+                    <option value="1" label="1">
+                </datalist>
+            </fieldset>
+        </section>
+    </form>
+    
+</body>
+</html>

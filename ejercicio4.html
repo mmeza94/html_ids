@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 4</title>
+</head>
+<body>
+    <form action="">
+        <section>
+            <p>Datalist</p>
+            <fieldset>
+                <label for="inputLista">Lista de colores</label>
+                <input list="listacolores" 
+                       name="inputLista">
+                <datalist id="listacolores">
+                    <option value="Azul">
+                    <option value="Rojo">
+                    <option value="Amaraillo">
+                    <option value="Negro">
+                    <option value="Blanco">
+                </datalist>
+            </fieldset>
+        </section>
+
+        <section>
+            <p>Url input</p>
+            <fieldset>
+                <label for="url">Lista urls</label>
+                <input type="url" 
+                       name="url" 
+                       id="url"
+                       placeholder="https://example.com"
+                       pattern="https://.*"
+                       size="30"
+                       list="listaurls"
+                       required>
+                <datalist id="listaurls">
+                    <option value="https://www.google.com" label="by google">
+                    <option value="https://www.msn.com" label="by ms">
+                </datalist>
+            </fieldset>
+        </section>
+
+        <section>
+            <p>Rangos</p>
+            <fieldset>
+                <label for="url">Lista urls</label>
+                <input type="range"
+                       max="6"
+                       min="0"
+                       step="1"
+                       list="listanums">
+                <datalist id="listanums">
+                    <option value="0" label="cero">
+                    <option value="1" label="uno">
+                    <option value="2" label="dos">
+                    <option value="3" label="tres">
+                    <option value="4" label="cuatro">
+                    <option value="5" label="cinco">
+                </datalist>
+            </fieldset>
+        </section>
+
+        <br>
+
+        <input type="submit" name="btn_enviar" value="Enviar">
+        <input type="submit" name="btn_limpiar" value="Limpiar">
+
+
+    </form>
+    
+</body>
+</html>
